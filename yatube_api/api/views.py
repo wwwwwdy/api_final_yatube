@@ -3,7 +3,7 @@ from rest_framework.filters import SearchFilter
 from rest_framework.generics import get_object_or_404
 from rest_framework.pagination import LimitOffsetPagination
 
-from posts.models import Follow, Group, Post
+from posts.models import Group, Post
 from .permissions import AuthorOrReadOnly
 from .serializers import (CommentSerializer, FollowSerializer, GroupSerializer,
                           PostSerializer)
